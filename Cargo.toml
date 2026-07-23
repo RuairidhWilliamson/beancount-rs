@@ -1,5 +1,5 @@
 [package]
-name = "bean-rs"
+name = "beancount-rs"
 version = "0.0.0"
 edition = "2024"
 description = "Rust crate for dealing with beancount data"
