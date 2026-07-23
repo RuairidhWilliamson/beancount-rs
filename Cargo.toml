@@ -5,7 +5,6 @@ edition = "2024"
 description = "Rust crate for dealing with beancount data"
 readme = "readme.md"
 license = "MIT"
-license_file = "LICENSE"
 repository = "https://github.com/RuairidhWilliamson/beancount-rs"
 
 [dependencies]
