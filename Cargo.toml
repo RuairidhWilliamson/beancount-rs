@@ -3,6 +3,7 @@ name = "bean-rs"
 version = "0.0.0"
 edition = "2024"
 description = "Rust crate for dealing with beancount data"
+readme = "readme.md"
 
 [dependencies]
 clap = { version = "4.6.1", features = ["derive"] }
