@@ -6,6 +6,7 @@ description = "Rust crate for dealing with beancount data"
 readme = "readme.md"
 license = "MIT"
 repository = "https://github.com/RuairidhWilliamson/beancount-rs"
+rust-version = "1.88"
 
 [dependencies]
 clap = { version = "4.6.1", features = ["derive"] }
