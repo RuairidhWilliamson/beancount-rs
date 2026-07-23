@@ -4,7 +4,7 @@ use std::{
     str::FromStr as _,
 };
 
-use bean_rs::{
+use beancount_rs::{
     date::Date,
     model::{
         Account, AccountPrefix, Amount, Balance, Currency, Directive, DirectiveInner, Document,

@@ -3,7 +3,7 @@ use std::{
     path::PathBuf,
 };
 
-use bean_rs::{model::Directive, parser::Statement};
+use beancount_rs::{model::Directive, parser::Statement};
 use clap::Parser;
 
 #[derive(Parser)]
@@ -28,7 +28,7 @@ fn main() -> Result<(), ()> {
 }
 
 fn process_file(input: &str) -> Result<(), ()> {
-    match bean_rs::parser::statements(input) {
+    match beancount_rs::parser::statements(input) {
         Ok((_, statements)) => {
             let directives = statements
                 .into_iter()

@@ -60,14 +60,14 @@ fn main() -> Result<(), ()> {
 fn process_file<'src>(
     input: &'src str,
     cli: &Cli,
-) -> Result<Vec<bean_rs::parser::Statement<'src>>, ()> {
-    match bean_rs::parser::statements(input) {
+) -> Result<Vec<beancount_rs::parser::Statement<'src>>, ()> {
+    match beancount_rs::parser::statements(input) {
         Ok((_, mut statements)) => {
             if cli.remove_excess_newlines {
                 statements.retain(|s| !s.is_newline());
             }
             if !cli.no_sort {
-                bean_rs::parser::sort_directive_runs(&mut statements);
+                beancount_rs::parser::sort_directive_runs(&mut statements);
             }
             Ok(statements)
         }
